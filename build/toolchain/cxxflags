@@ -1,0 +1,4 @@
+-march=rv32imc_zicsr_zifencei
+-mtune=esp-base
+"-specs=D:/Espressif/Workspace/Music_player/build/specs/picolibc.specs"
+-fno-rtti

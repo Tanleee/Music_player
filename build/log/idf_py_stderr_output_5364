@@ -1,0 +1,57 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:\esp\v6.0.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace D:\Espressif\Workspace\Music_player\build\app-template.elf D:\Espressif\Workspace\Music_player\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'C:\esp\v6.0.2\esp-idf\tools\idf.py' '-p' 'COM3'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200acc8: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m34[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4200accc: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m37[0m
+[0m--- 0x4202fc36: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m264[0m
+[0m--- 0x4200acc0: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m34[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x403879d2: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200acc8: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m34[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4200accc: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m37[0m
+[0m--- 0x4202fc36: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m264[0m
+[0m--- 0x4200acc0: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m34[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x403879d2: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200acc8: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m34[0m
+[0;33m--- Stack dump detected[0m
+[0;33m.[0m[0m--- 0x4200accc: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m37[0m
+[0m--- 0x4202fc36: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m264[0m
+[0m--- 0x4200acc0: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m34[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x403879d2: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0;33m.[0m[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200acc8: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m34[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4200accc: [0;33mi2s_writer_task[0m[0m at [0;32mD:/Espressif/Workspace/Music_player/main/src/i2s_audio.c[0m[0m:[1;31m37[0m
+[0m--- 0x4202fc36: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m264[0m
+[0;33m.[0m[0;33m[0m
+[0m

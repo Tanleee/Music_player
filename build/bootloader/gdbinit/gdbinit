@@ -1,0 +1,2 @@
+source D:/Espressif/Workspace/Music_player/build/bootloader/gdbinit/symbols
+source D:/Espressif/Workspace/Music_player/build/bootloader/gdbinit/connect
