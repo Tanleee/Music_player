@@ -9,3 +9,5 @@ Please check [ESP-IDF docs](https://docs.espressif.com/projects/esp-idf/en/lates
 Unless required by applicable law or agreed to in writing, this
 software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
 CONDITIONS OF ANY KIND, either express or implied.*
+
+i2s_writer_task (initialize) -> audio_play_task -> i2s_writer_task

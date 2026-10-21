@@ -16,3 +16,6 @@ void i2s_audio_feed(const uint8_t *data, size_t len);
 
 // Cho den khi hang doi phat het sach (dung truoc khi doi dinh dang cho file ke tiep).
 void i2s_audio_wait_drain(void);
+
+// Lay muc am luong hien tai (0.0 - 1.0)
+float i2s_audio_get_volume(void);

@@ -18,7 +18,7 @@ set(HEAD_HASH)
 file(READ "D:/Espressif/Workspace/Music_player/build/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
 
 string(STRIP "${HEAD_CONTENTS}" HEAD_CONTENTS)
-set(GIT_DIR "C:/esp/v6.0.2/esp-idf/.git")
+set(GIT_DIR "D:/Espressif/Workspace/Music_player/.git")
 # handle git-worktree
 if(EXISTS "${GIT_DIR}/commondir")
 	file(READ "${GIT_DIR}/commondir" GIT_DIR_NEW LIMIT 1024)

@@ -1,0 +1,238 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:\esp\v6.0.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace D:\Espressif\Workspace\Music_player\build\app-template.elf D:\Espressif\Workspace\Music_player\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'C:\esp\v6.0.2\esp-idf\tools\idf.py' '-p' 'COM3'
+���K��.3
+[0;32mI (34) boot.esp32c�ESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 13 2026 21:31:46[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=0f6cch ( 63180) map[0m
+[0;32mI (99) esp_image: segment 1: paddr=0001f6f4 vaddr=3fc8ce00 size=00924h (  2340) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=329a0h (207264) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=000529c8 vaddr=3fc8d724 size=0117ch (  4476) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00053b4c vaddr=40380000 size=0ccc4h ( 52420) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=00060818 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (155) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (155) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (179) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (180) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     app-template[0m
+[0;32mI (189) app_init: App version:      2f5e011-dirty[0m
+[0;32mI (193) app_init: Compile time:     Oct 19 2026 16:01:40[0m
+[0;32mI (198) app_init: ELF file SHA256:  966e579bc...[0m
+[0;32mI (202) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (210) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC90E30 len 0002F1D0 (188 KiB): RAM[0m
+[0;32mI (229) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (235) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (241) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (247) spi_flash: detected chip: generic[0m
+[0;32mI (250) spi_flash: flash io: dio[0m
+[0;32mI (254) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (260) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (267) main_task: Started on CPU0[0m
+[0;32mI (297) main_task: Calling app_main()[0m
+[0;32mI (547) TFT: Khoi tao man hinh thanh cong[0m
+[0;32mI (547) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (587) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: ASTC
+Type: SDSC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 1904MB
+CSD: ver=1, sector_size=512, capacity=3899392 read_bl_len=10
+SSR: bus_width=1
+[0;32mI (617) main_task: Returned from app_main()[0m
+[0;32mI (627) MAIN: Tim thay 9 file trong /sdcard/music, phat theo thu tu ngau nhien:[0m
+[0;32mI (637) MAIN: Dang phat Charlie Puth - Attention [Official Video].wav: 44100 Hz, 1 kenh, 16 bit, 20443138 bytes[0m
+[0;32mI (8097) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (9317) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (9927) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (10197) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (10417) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (10627) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[0;32mI (10877) VOL_BTN: VOL_DOWN -> volume = 40%[0m
+[0;32mI (11287) VOL_BTN: VOL_DOWN -> volume = 30%[0m
+[0;32mI (11547) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (11917) VOL_BTN: VOL_DOWN -> volume = 10%[0m
+[0;32mI (12137) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (12377) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (13977) VOL_BTN: VOL_UP -> volume = 10%[0m
+[0;32mI (14977) VOL_BTN: VOL_UP -> volume = 20%[0m
+[0;32mI (14977) VOL_BTN: VOL_DOWN -> volume = 10%[0m
+[0;32mI (16197) VOL_BTN: VOL_UP -> volume = 20%[0m
+[0;32mI (16887) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (17237) VOL_BTN: VOL_UP -> volume = 40%[0m
+[0;32mI (17497) VOL_BTN: VOL_UP -> volume = 50%[0m
+[0;32mI (17757) VOL_BTN: VOL_UP -> volume = 60%[0m
+[0;32mI (17957) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (18197) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (18397) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (18397) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (18557) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (18727) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (18977) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (22457) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (23037) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (23727) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (24187) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (25097) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[0;32mI (25777) VOL_BTN: VOL_DOWN -> volume = 40%[0m
+[0;32mI (26477) VOL_BTN: VOL_DOWN -> volume = 30%[0m
+[0;32mI (27157) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (27637) VOL_BTN: VOL_DOWN -> volume = 10%[0m
+[0;32mI (31577) VOL_BTN: VOL_UP -> volume = 20%[0m
+[0;32mI (32297) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (33047) VOL_BTN: VOL_UP -> volume = 40%[0m
+[0;32mI (33747) VOL_BTN: VOL_UP -> volume = 50%[0m
+[0;32mI (34137) VOL_BTN: VOL_UP -> volume = 60%[0m
+[0;32mI (34137) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[0;32mI (34477) VOL_BTN: VOL_UP -> volume = 60%[0m
+[0;32mI (34847) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (35107) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (35657) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (35657) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (35907) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (35907) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (36177) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (36387) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (36737) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (38547) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (38977) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (39217) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (39497) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (39737) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[0;32mI (40417) VOL_BTN: VOL_DOWN -> volume = 40%[0m
+[0;32mI (40687) VOL_BTN: VOL_DOWN -> volume = 30%[0m
+[0;32mI (40907) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (41487) VOL_BTN: VOL_DOWN -> volume = 10%[0m
+[0;32mI (41767) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (41967) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (42177) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (43897) VOL_BTN: VOL_UP -> volume = 10%[0m
+[0;32mI (44167) VOL_BTN: VOL_UP -> volume = 20%[0m
+[0;32mI (44367) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (44737) VOL_BTN: VOL_UP -> volume = 40%[0m
+[0;32mI (44957) VOL_BTN: VOL_UP -> volume = 50%[0m
+[0;32mI (45137) VOL_BTN: VOL_UP -> volume = 60%[0m
+[0;32mI (45337) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (45337) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (45587) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (45697) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (46287) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (46507) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (46717) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (47087) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (47247) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (47247) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (47647) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (47647) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (48077) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (60887) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (60887) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (61177) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (61537) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (61927) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (62147) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[0;32mI (62347) VOL_BTN: VOL_DOWN -> volume = 40%[0m
+[0;32mI (62577) VOL_BTN: VOL_DOWN -> volume = 30%[0m
+[0;32mI (63027) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (63237) VOL_BTN: VOL_DOWN -> volume = 10%[0m
+[0;32mI (63447) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (63667) VOL_BTN: VOL_UP -> volume = 10%[0m
+[0;32mI (63667) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (64867) VOL_BTN: VOL_UP -> volume = 10%[0m
+[0;32mI (64867) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (66207) VOL_BTN: VOL_UP -> volume = 10%[0m
+[0;32mI (66307) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (67347) VOL_BTN: VOL_UP -> volume = 10%[0m
+[0;32mI (69637) VOL_BTN: VOL_UP -> volume = 20%[0m
+[0;32mI (71697) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (71697) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (73147) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (74457) VOL_BTN: VOL_UP -> volume = 40%[0m
+[0;32mI (75997) VOL_BTN: VOL_UP -> volume = 50%[0m
+[0;32mI (77157) VOL_BTN: VOL_UP -> volume = 60%[0m
+[0;32mI (79067) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (79747) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (80347) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (81007) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (83797) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (84477) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (85217) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (85877) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (86167) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[0;32mI (86437) VOL_BTN: VOL_DOWN -> volume = 40%[0m
+[0;32mI (87017) VOL_BTN: VOL_DOWN -> volume = 30%[0m
+[0;32mI (87537) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (87967) VOL_BTN: VOL_DOWN -> volume = 10%[0m
+[0;32mI (88257) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (89907) VOL_BTN: VOL_UP -> volume = 10%[0m
+[0;32mI (93767) VOL_BTN: VOL_UP -> volume = 20%[0m
+[0;32mI (96497) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (96497) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (97887) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (101737) VOL_BTN: VOL_UP -> volume = 40%[0m
+[0;32mI (102927) VOL_BTN: VOL_UP -> volume = 50%[0m
+[0;32mI (104377) VOL_BTN: VOL_UP -> volume = 60%[0m
+[0;32mI (104537) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (105847) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (106447) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (108387) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (108387) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (109657) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (109657) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (110377) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (110377) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (111047) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (111867) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (112177) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (112407) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (112407) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (112627) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (112627) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (114977) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (115877) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (116547) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (117167) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[0;32mI (118087) VOL_BTN: VOL_DOWN -> volume = 40%[0m
+[0;32mI (118677) VOL_BTN: VOL_DOWN -> volume = 30%[0m
+[0;32mI (119427) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (120077) VOL_BTN: VOL_DOWN -> volume = 10%[0m
+[0;32mI (123597) VOL_BTN: VOL_UP -> volume = 20%[0m
+[0;32mI (125667) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (125817) VOL_BTN: VOL_UP -> volume = 40%[0m
+[0;32mI (127947) VOL_BTN: VOL_DOWN -> volume = 30%[0m
+[1;31mE (136517) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x108, status 0xff3f[0m
+[1;31mE (136517) sdmmc_cmd: sdmmc_read_sectors: error 0x108 reading blocks 60368+[0..6][0m
+[1;31mE (136517) diskio_sdmmc: sdmmc_read_blocks failed (0x108)[0m
+[1;31mE (137897) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (137897) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (138897) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (138897) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (139897) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (139897) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (140897) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (140897) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m

@@ -30,14 +30,21 @@ void i2s_audio_set_volume(float volume)
     s_volume = volume;
 }
 
+float i2s_audio_get_volume(void)
+{
+    return s_volume;
+}
+
 // Task rieng: chi lo lay chunk tu hang doi va ghi ra I2S
 static void i2s_writer_task(void *arg)
 {
-    audio_chunk_t chunk;   // gio chi la 1 con tro + 1 size_t (~8-12 byte) - khong con nang stack nua
+    audio_chunk_t chunk;   
+	
     while (1) {
         if (xQueueReceive(s_audio_queue, &chunk, portMAX_DELAY) == pdTRUE) {
             size_t written = 0;
             i2s_channel_write(s_tx_chan, chunk.data, chunk.len, &written, portMAX_DELAY);
+			
             free(chunk.data);   // giai phong sau khi ghi xong
         }
     }

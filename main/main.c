@@ -11,12 +11,12 @@
 #include "wav_file.h"
 #include "i2s_audio.h"
 #include "tft_display.h"
+#include "volume_button.h"
 
 static const char *TAG = "MAIN";
 
 #define MAX_MUSIC_FILES 64
 
-// static -> nam o vung nho tinh (BSS), khong chiem stack cua task
 static char s_file_names[MAX_MUSIC_FILES][64];
 static int  s_file_count = 0;
 
@@ -44,6 +44,8 @@ static void shuffle_file_list(void)
     for (int i = s_file_count - 1; i > 0; i--) {
         int j = esp_random() % (i + 1);
         char tmp[sizeof(s_file_names[0])];
+		
+		// swap
         memcpy(tmp, s_file_names[i], sizeof(tmp));
         memcpy(s_file_names[i], s_file_names[j], sizeof(tmp));
         memcpy(s_file_names[j], tmp, sizeof(tmp));
@@ -59,9 +61,12 @@ static void audio_play_task(void *arg)
     ESP_LOGI(TAG, "Tim thay %d file trong %s, phat theo thu tu ngau nhien:", s_file_count, SD_MUSIC_DIR);
 
     for (int i = 0; i < s_file_count; i++) {
-        char path[300];
+		
+        char path[300];		
         snprintf(path, sizeof(path), "%s/%s", SD_MUSIC_DIR, s_file_names[i]);
+		
         FILE *f = fopen(path, "rb");
+		
         if (!f) continue;
 
         wav_info_t info;
@@ -94,16 +99,20 @@ static void audio_play_task(void *arg)
     }
 
     ESP_LOGI(TAG, "Da phat het cac file trong thu muc music");
-    vTaskDelete(NULL);   // task xong viec thi tu xoa
+	
+    vTaskDelete(NULL);   
 }
 void app_main(void)
 {
-    // TFT init TRUOC - ben trong no tu goi spi_bus_initialize() cho ca SD dung chung
     tft_display_init();   // khong chan chuong trinh neu that bai, nhung can bus da san sang cho SD
 
     if (sd_storage_init() != ESP_OK) return;
     if (i2s_audio_init() != ESP_OK) return;
-    i2s_audio_set_volume(0.5f);
-
+    
+	i2s_audio_set_volume(1.0f);
+	if (volume_button_init() != ESP_OK) {
+	    ESP_LOGW(TAG, "Khoi tao nut am luong that bai");
+	}
+	
     xTaskCreate(audio_play_task, "audio_play", 8192, NULL, 5, NULL);
 }

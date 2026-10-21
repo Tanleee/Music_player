@@ -1,0 +1,320 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:\esp\v6.0.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace D:\Espressif\Workspace\Music_player\build\app-template.elf D:\Espressif\Workspace\Music_player\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'C:\esp\v6.0.2\esp-idf\tools\idf.py' '-p' 'COM3'
+I�٥ͥ��� v1.3
+[0;32mI (34) bo�ESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 13 2026 21:31:46[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=0f6cch ( 63180) map[0m
+[0;32mI (99) esp_image: segment 1: paddr=0001f6f4 vaddr=3fc8ce00 size=00924h (  2340) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=329a0h (207264) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=000529c8 vaddr=3fc8d724 size=0117ch (  4476) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00053b4c vaddr=40380000 size=0ccc4h ( 52420) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=00060818 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (155) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (155) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (179) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (180) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     app-template[0m
+[0;32mI (189) app_init: App version:      2f5e011-dirty[0m
+[0;32mI (193) app_init: Compile time:     Oct 19 2026 16:01:40[0m
+[0;32mI (198) app_init: ELF file SHA256:  eacb4d8a0...[0m
+[0;32mI (202) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (210) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC90E30 len 0002F1D0 (188 KiB): RAM[0m
+[0;32mI (229) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (235) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (241) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (247) spi_flash: detected chip: generic[0m
+[0;32mI (250) spi_flash: flash io: dio[0m
+[0;32mI (254) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (260) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (267) main_task: Started on CPU0[0m
+[0;32mI (297) main_task: Calling app_main()[0m
+[0;32mI (547) TFT: Khoi tao man hinh thanh cong[0m
+[0;32mI (547) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (587) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: ASTC
+Type: SDSC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 1904MB
+CSD: ver=1, sector_size=512, capacity=3899392 read_bl_len=10
+SSR: bus_width=1
+[0;32mI (617) main_task: Returned from app_main()[0m
+[0;32mI (627) MAIN: Tim thay 9 file trong /sdcard/music, phat theo thu tu ngau nhien:[0m
+[0;32mI (637) MAIN: Dang phat BIGBAN~1.WAV: 44100 Hz, 1 kenh, 16 bit, 28587008 bytes[0m
+[0;32mI (6247) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (7157) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (7917) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (8627) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (8787) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (9757) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[0;32mI (10597) VOL_BTN: VOL_DOWN -> volume = 40%[0m
+[0;32mI (11117) VOL_BTN: VOL_DOWN -> volume = 30%[0m
+[0;32mI (11647) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (12287) VOL_BTN: VOL_DOWN -> volume = 10%[0m
+[0;32mI (13357) VOL_BTN: VOL_UP -> volume = 20%[0m
+[0;32mI (13627) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (13627) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (14477) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (15747) VOL_BTN: VOL_UP -> volume = 40%[0m
+[0;32mI (16157) VOL_BTN: VOL_UP -> volume = 50%[0m
+[0;32mI (16327) VOL_BTN: VOL_UP -> volume = 60%[0m
+[0;32mI (16647) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (16657) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (16817) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (19227) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (20207) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (20347) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (20547) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (20547) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (21287) VOL_BTN: VOL_UP -> volume = 90%[0m
+[0;32mI (21497) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (21677) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (21837) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (22027) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (35977) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (38377) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (40117) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (67887) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (68047) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (68197) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (68347) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (68507) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (68667) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (68817) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (68967) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (69127) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (69277) VOL_BTN: VOL_UP -> volume = 100%[0m
+[1;31mE (70877) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (70877) sdmmc_cmd: sdmmc_read_sectors: error 0x107 reading blocks 189944+[0..6][0m
+[1;31mE (70887) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (71937) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (71937) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (72937) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (72937) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (73937) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (73937) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;32mI (74407) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (74557) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (74707) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (74857) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[1;31mE (74937) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (74937) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;32mI (75007) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[1;31mE (75927) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (75927) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (75927) task_wdt: Tasks currently running:[0m
+[1;31mE (75927) task_wdt: CPU 0: audio_play[0m
+[1;31mE (75927) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x403826b8  RA      : 0x40382e38  SP      : 0x3fca77c0  GP      : 0x3fc8d600  
+TP      : 0x3fca8d50  T0      : 0x3fc93398  T1      : 0x80000000  T2      : 0x00000000  
+S0/FP   : 0x3fca7820  S1      : 0x00000000  A0      : 0x3fc93e7c  A1      : 0x3fca7820  
+A2      : 0xffffffff  A3      : 0x00000000  A4      : 0x000fffff  A5      : 0xffffffff  
+A6      : 0x60023000  A7      : 0x00000008  S2      : 0x3fc93e7c  S3      : 0x3fca7820  
+S4      : 0xffffffff  S5      : 0x048318d3  S6      : 0x3fca794c  S7      : 0x00000000  
+S8      : 0x00000008  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0xff000fff  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (76057) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (76067) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (77077) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (77077) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (78077) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (78077) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;32mI (78077) MAIN: Da phat het cac file trong thu muc music[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 13 2026 21:31:46[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=0f6cch ( 63180) map[0m
+[0;32mI (99) esp_image: segment 1: paddr=0001f6f4 vaddr=3fc8ce00 size=00924h (  2340) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=329a0h (207264) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=000529c8 vaddr=3fc8d724 size=0117ch (  4476) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00053b4c vaddr=40380000 size=0ccc4h ( 52420) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=00060818 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (155) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (155) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (179) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (180) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     app-template[0m
+[0;32mI (189) app_init: App version:      2f5e011-dirty[0m
+[0;32mI (193) app_init: Compile time:     Oct 19 2026 16:01:40[0m
+[0;32mI (198) app_init: ELF file SHA256:  eacb4d8a0...[0m
+[0;32mI (202) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (210) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC90E30 len 0002F1D0 (188 KiB): RAM[0m
+[0;32mI (229) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (235) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (241) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (247) spi_flash: detected chip: generic[0m
+[0;32mI (250) spi_flash: flash io: dio[0m
+[0;32mI (254) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (260) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (267) main_task: Started on CPU0[0m
+[0;32mI (297) main_task: Calling app_main()[0m
+[0;32mI (547) TFT: Khoi tao man hinh thanh cong[0m
+[0;32mI (547) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (587) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[1;31mE (3587) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (3587) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[1;31mE (3587) vfs_fat_sdmmc: esp_vfs_fat_sdspi_sdcard_init failed (0x107).[0m
+[1;31mE (3587) SD: Mount that bai: ESP_ERR_TIMEOUT[0m
+[0;32mI (3597) main_task: Returned from app_main()[0m
+����revision: v1.3
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=0f6cch ( 63180) map[0m
+[0;32mI (99) esp_image: segment 1: paddr=0001f6f4 vaddr=3fc8ce00 size=00924h (  2340) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=329a0h (207264) map[0m
+[0;32mI (137) esp_image: segment 3: paddr=000529c8 vaddr=3fc8d724 size=0117ch (  4476) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00053b4c vaddr=40380000 size=0ccc4h ( 52420) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=00060818 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (155) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (155) boot: Disabling RNG early entropy source...[0m
+[0;32mI (170) cpu_start: Unicore app[0m
+[0;32mI (178) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (179) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (180) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     app-template[0m
+[0;32mI (189) app_init: App version:      2f5e011-dirty[0m
+[0;32mI (193) app_init: Compile time:     Oct 19 2026 16:01:40[0m
+[0;32mI (198) app_init: ELF file SHA256:  eacb4d8a0...[0m
+[0;32mI (202) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (210) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC90E30 len 0002F1D0 (188 KiB): RAM[0m
+[0;32mI (229) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (235) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (241) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (247) spi_flash: detected chip: generic[0m
+[0;32mI (250) spi_flash: flash io: dio[0m
+[0;32mI (254) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (260) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (267) main_task: Started on CPU0[0m
+[0;32mI (297) main_task: Calling app_main()[0m
+[0;32mI (547) TFT: Khoi tao man hinh thanh cong[0m
+[0;32mI (547) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (587) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: ASTC
+Type: SDSC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 1904MB
+CSD: ver=1, sector_size=512, capacity=3899392 read_bl_len=10
+SSR: bus_width=1
+[0;32mI (617) main_task: Returned from app_main()[0m
+[0;32mI (627) MAIN: Tim thay 9 file trong /sdcard/music, phat theo thu tu ngau nhien:[0m
+[0;32mI (637) MAIN: Dang phat BTS DOPE.wav: 44100 Hz, 1 kenh, 16 bit, 22638594 bytes[0m
+[0;32mI (11847) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (11977) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (12837) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (13727) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (14247) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (14687) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (14687) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (14937) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (15097) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (15607) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (15917) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (16167) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (16357) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (16357) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (16517) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (16677) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (16827) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (16827) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (17117) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (17337) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (17547) VOL_BTN: VOL_UP -> volume = 100%[0m
+[0;32mI (18457) VOL_BTN: VOL_DOWN -> volume = 90%[0m
+[0;32mI (18947) VOL_BTN: VOL_DOWN -> volume = 80%[0m
+[0;32mI (19387) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (21337) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (23587) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (24037) VOL_BTN: VOL_UP -> volume = 80%[0m
+[0;32mI (24037) VOL_BTN: VOL_DOWN -> volume = 70%[0m
+[0;32mI (24667) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (25257) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[0;32mI (25887) VOL_BTN: VOL_DOWN -> volume = 40%[0m
+[0;32mI (26567) VOL_BTN: VOL_DOWN -> volume = 30%[0m
+[0;32mI (27207) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (27977) VOL_BTN: VOL_DOWN -> volume = 10%[0m
+[0;32mI (28137) VOL_BTN: VOL_DOWN -> volume = 0%[0m
+[0;32mI (29337) VOL_BTN: VOL_UP -> volume = 10%[0m
+[0;32mI (35737) VOL_BTN: VOL_UP -> volume = 20%[0m
+[0;32mI (37107) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (37107) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (37997) VOL_BTN: VOL_UP -> volume = 30%[0m
+[0;32mI (38827) VOL_BTN: VOL_UP -> volume = 40%[0m
+[0;32mI (39757) VOL_BTN: VOL_UP -> volume = 50%[0m
+[0;32mI (39947) VOL_BTN: VOL_UP -> volume = 60%[0m
+[0;32mI (43237) VOL_BTN: VOL_UP -> volume = 70%[0m
+[0;32mI (43237) VOL_BTN: VOL_DOWN -> volume = 60%[0m
+[0;32mI (43907) VOL_BTN: VOL_DOWN -> volume = 50%[0m
+[0;32mI (44437) VOL_BTN: VOL_DOWN -> volume = 40%[0m
+[0;32mI (44897) VOL_BTN: VOL_DOWN -> volume = 30%[0m
+[0;32mI (45377) VOL_BTN: VOL_DOWN -> volume = 20%[0m
+[0;32mI (45817) VOL_BTN: VOL_DOWN -> volume = 10%[0m

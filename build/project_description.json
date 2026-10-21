@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "app-template",
-    "project_version":    "1",
+    "project_version":    "2f5e011-dirty",
     "project_path":       "D:/Espressif/Workspace/Music_player",
     "idf_path":           "C:/esp/v6.0.2/esp-idf",
     "build_dir":          "D:/Espressif/Workspace/Music_player/build",
@@ -1780,7 +1780,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/Espressif/Workspace/Music_player/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/Espressif/Workspace/Music_player/main/main.c", "D:/Espressif/Workspace/Music_player/main/src/spi_bus.c", "D:/Espressif/Workspace/Music_player/main/src/sd_storage.c", "D:/Espressif/Workspace/Music_player/main/src/wav_file.c", "D:/Espressif/Workspace/Music_player/main/src/i2s_audio.c", "D:/Espressif/Workspace/Music_player/main/src/tft_display.cpp" ],
+            "sources": [ "D:/Espressif/Workspace/Music_player/main/main.c", "D:/Espressif/Workspace/Music_player/main/src/spi_bus.c", "D:/Espressif/Workspace/Music_player/main/src/sd_storage.c", "D:/Espressif/Workspace/Music_player/main/src/wav_file.c", "D:/Espressif/Workspace/Music_player/main/src/i2s_audio.c", "D:/Espressif/Workspace/Music_player/main/src/tft_display.cpp", "D:/Espressif/Workspace/Music_player/main/src/volume_button.c" ],
             "include_dirs": [ "inc" ]
         },
         "mbedtls": {

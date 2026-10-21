@@ -1,0 +1,8 @@
+Command: ninja all
+[1/4] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Espressif\Workspace\Music_player\build && C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:/esp/v6.0.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Espressif/Workspace/Music_player/build/partition_table/partition-table.bin D:/Espressif/Workspace/Music_player/build/app-template.bin"
+app-template.bin binary size 0x50190 bytes. Smallest app partition is 0x300000 bytes. 0x2afe70 bytes (90%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Espressif\Workspace\Music_player\build\bootloader && C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:/esp/v6.0.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/Espressif/Workspace/Music_player/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'

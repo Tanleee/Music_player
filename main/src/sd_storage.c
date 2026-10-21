@@ -11,17 +11,17 @@ static sdmmc_card_t *s_card = NULL;
 
 esp_err_t sd_storage_init(void)
 {
-    if (s_card) return ESP_OK;   // da mount roi
+    if (s_card) return ESP_OK;   
 
     esp_vfs_fat_sdmmc_mount_config_t mount_cfg = {
-        .format_if_mount_failed = false,   // khong tu dong format
+        .format_if_mount_failed = false,   
         .max_files = 5,
         .allocation_unit_size = 16 * 1024,
     };
 
     sdmmc_host_t host = SDSPI_HOST_DEFAULT();
     host.slot = APP_SPI_HOST;
-    host.max_freq_khz = 20000;   // test on dinh roi tang len 20000
+    host.max_freq_khz = 20000;   
 
     sdspi_device_config_t slot_cfg = SDSPI_DEVICE_CONFIG_DEFAULT();
     slot_cfg.gpio_cs = PIN_SD_CS;

@@ -19,7 +19,6 @@
 #define PIN_I2S_LRC    1
 #define PIN_I2S_DIN    5
 
-// Ghi chu: GPIO8, GPIO9 la strapping pin tren ESP32-C3 (LOG/BOOT) nhung da
-// duoc kiem chung chay on dinh trong thuc nghiem truoc do, khong can doi.
-// GPIO18, GPIO19 danh cho USB, GPIO20, GPIO21 danh cho UART debug -> khong dung toi nua,
-// nen Serial Monitor hoat dong binh thuong, khong bi nhieu nhu lo ngai truoc do.
+// Nut nhan tang/giam am luong (dung dien tro pull-down ngoai, nhan = muc HIGH)
+#define PIN_BTN_VOL_UP    18
+#define PIN_BTN_VOL_DOWN  19

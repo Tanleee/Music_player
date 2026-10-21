@@ -1,0 +1,15 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Espressif\Workspace\Music_player\build && C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:/esp/v6.0.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Espressif/Workspace/Music_player/build/partition_table/partition-table.bin D:/Espressif/Workspace/Music_player/build/app-template.bin"
+app-template.bin binary size 0x50190 bytes. Smallest app partition is 0x300000 bytes. 0x2afe70 bytes (90%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Espressif\Workspace\Music_player\build\bootloader && C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:/esp/v6.0.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/Espressif/Workspace/Music_player/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool --chip esp32c3 -p COM3 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 80m --flash-size 4MB 0x0 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 app-template.bin
+esptool v5.3.1
+Serial port COM3:
+[31mFAILED: [0mCMakeFiles/flash.util 
+C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Espressif\Workspace\Music_player && C:\Espressif\tools\cmake\4.0.3\bin\cmake.exe -D IDF_PATH=C:/esp/v6.0.2/esp-idf -D SERIAL_TOOL=C:/Espressif/tools/python/v6.0.2/venv/Scripts/python.exe;-m;esptool;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default-reset;--after=hard-reset;write-flash;@flash_args -D WORKING_DIRECTORY=D:/Espressif/Workspace/Music_player/build -P C:/esp/v6.0.2/esp-idf/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.
