@@ -1,0 +1,55 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:\esp\v6.0.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace D:\Espressif\Workspace\Music_player\build\app-template.elf D:\Espressif\Workspace\Music_player\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'C:\esp\v6.0.2\esp-idf\tools\idf.py' '-p' 'COM3'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40387c80: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40387d0e: [0;33mvPortExitCritical[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m633[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x40381d6a: [0;33mspicommon_dma_setup_priv_buffer[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m398[0m
+[0m--- 0x40381d54: [0;33mspicommon_dma_setup_priv_buffer[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m396[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x40387c80: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40387d0e: [0;33mvPortExitCritical[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m633[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40381d16: [0;33mspi_bus_get_dma_ctx[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m1030[0m
+[0m--- 0x40381d54: [0;33mspicommon_dma_setup_priv_buffer[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m396[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x40381d16: [0;33mspi_bus_get_dma_ctx[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m1030[0m
+[0m--- 0x40381d54: [0;33mspicommon_dma_setup_priv_buffer[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m396[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x40381d52: [0;33mspicommon_dma_setup_priv_buffer[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m396[0m
+[0m--- 0x40381d4c: [0;33mspicommon_dma_setup_priv_buffer[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m395[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x40387c80: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40387d0e: [0;33mvPortExitCritical[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m633[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x403875c8: [0;33mesp_cache_msync[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_mm/esp_cache_msync.c[0m[0m:[1;31m97[0m
+[0m--- 0x40381f54: [0;33mspicommon_dma_setup_priv_buffer[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m441[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x40381c5e: [0;33mspicommon_dma_desc_setup_link[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m379[0m
+[0m--- 0x40382456: [0;33ms_spi_dma_prepare_data[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m762[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x40387c80: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m521[0m
+[0m--- 0x40387d0e: [0;33mvPortExitCritical[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m633[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Warning: Failed to decode multiple lines in a row. Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33m--- Warning: Failed to decode multiple lines in a row. Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33m--- Warning: Failed to decode multiple lines in a row. Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0m

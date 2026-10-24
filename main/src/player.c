@@ -44,6 +44,7 @@ static QueueHandle_t s_cmd_queue = NULL;
 static int  s_cur_index  = -1;    // chi so bai dang/sap phat, -1 = chua chon bai nao
 static bool s_is_playing = false; // da bat dau phat it nhat 1 bai (co the dang pause)
 static bool s_is_paused  = false;
+static bool s_shuffle_mode_on = true;   // true = Shuffle, false = Loop (tuan tu) - khop mac dinh voi UI
 
 // ---------------------------------------------------------------------
 // Quet thu muc nhac tren SD, luu vao s_track_names[]
@@ -103,6 +104,15 @@ static void ui_on_shuffle(void)
 {
     player_cmd_t cmd = { .type = PLAYER_CMD_SHUFFLE, .index = 0 };
     xQueueSend(s_cmd_queue, &cmd, 0);
+}
+
+// Goi moi khi nguoi dung doi che do Shuffle/Loop tren man hinh - chi can luu
+// lai co, anh huong den cach chon bai ke tiep khi 1 bai phat xong (xem player_task).
+// Day la 1 bien bool don gian, ghi tu lvgl_task/player_task deu an toan (khong
+// can dong bo), nen khong dua lenh nay qua hang doi nhu cac thao tac khac.
+static void ui_on_mode_change(bool shuffle_on)
+{
+    s_shuffle_mode_on = shuffle_on;
 }
 
 static void ui_on_play_pause(void)
@@ -274,7 +284,10 @@ static void player_task(void *arg)
         bool finished_naturally = play_file_blocking(s_cur_index);
 
         if (finished_naturally && s_track_count > 0) {
-            s_cur_index = (s_cur_index + 1) % s_track_count;
+            // Shuffle: tiep tuc chon ngau nhien. Loop: di theo dung thu tu file
+            // trong thu muc nhac tren the SD (khong xao tron).
+            s_cur_index = s_shuffle_mode_on ? pick_random_index()
+                                             : (s_cur_index + 1) % s_track_count;
             player_cmd_t auto_next = { .type = PLAYER_CMD_PLAY_INDEX, .index = s_cur_index };
             xQueueSend(s_cmd_queue, &auto_next, 0);
         } else if (finished_naturally) {
@@ -292,7 +305,7 @@ esp_err_t player_init(void)
     s_cmd_queue = xQueueCreate(4, sizeof(player_cmd_t));
     if (!s_cmd_queue) return ESP_ERR_NO_MEM;
 
-    tft_display_set_callbacks(ui_on_track_click, ui_on_shuffle,
+    tft_display_set_callbacks(ui_on_track_click, ui_on_shuffle, ui_on_mode_change,
                                ui_on_play_pause, ui_on_next, ui_on_prev);
 
     BaseType_t ok = xTaskCreate(player_task, "player_task", 8192, NULL, 5, NULL);

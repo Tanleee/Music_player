@@ -9,6 +9,7 @@ extern "C" {
 
 typedef void (*tft_track_click_cb_t)(int index);
 typedef void (*tft_control_cb_t)(void);
+typedef void (*tft_mode_cb_t)(bool shuffle_on);   // true = vua chuyen sang Shuffle, false = Loop
 
 // Khoi tao man hinh LGFX + LVGL. Goi 1 lan trong app_main, SAU spi_bus_init()/sd_storage_init()
 // (man hinh dung chung bus SPI2 voi SD card).
@@ -22,6 +23,7 @@ void tft_display_set_track_list(const char * const *names, int count);
 // Chi can goi 1 lan, ngay sau tft_display_init().
 void tft_display_set_callbacks(tft_track_click_cb_t on_track_click,
                                 tft_control_cb_t on_shuffle,
+                                tft_mode_cb_t on_mode_change,
                                 tft_control_cb_t on_play_pause,
                                 tft_control_cb_t on_next,
                                 tft_control_cb_t on_prev);

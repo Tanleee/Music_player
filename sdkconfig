@@ -3721,8 +3721,7 @@ CONFIG_LV_TXT_COLOR_CMD="#"
 #
 # default:
 # CONFIG_LV_FONT_MONTSERRAT_8 is not set
-# default:
-# CONFIG_LV_FONT_MONTSERRAT_10 is not set
+CONFIG_LV_FONT_MONTSERRAT_10=y
 # default:
 # CONFIG_LV_FONT_MONTSERRAT_12 is not set
 # default:

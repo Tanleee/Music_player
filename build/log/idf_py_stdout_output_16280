@@ -1,0 +1,71 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:\esp\v6.0.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace D:\Espressif\Workspace\Music_player\build\app-template.elf D:\Espressif\Workspace\Music_player\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'C:\esp\v6.0.2\esp-idf\tools\idf.py' '-p' 'COM3'
+�����revision: v1�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 13 2026 21:31:46[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=1ede4h (126436) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0002ee0c vaddr=3fc8ce00 size=0120ch (  4620) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=7fde0h (523744) map[0m
+[0;32mI (198) esp_image: segment 3: paddr=000afe08 vaddr=3fc8e00c size=008e4h (  2276) load[0m
+[0;32mI (199) esp_image: segment 4: paddr=000b06f4 vaddr=40380000 size=0cd64h ( 52580) load[0m
+[0;32mI (212) esp_image: segment 5: paddr=000bd460 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (216) boot: Disabling RNG early entropy source...[0m
+[0;32mI (231) cpu_start: Unicore app[0m
+[0;32mI (239) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (239) cpu_start: Pro cpu start user code[0m
+[0;32mI (239) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (241) app_init: Application information:[0m
+[0;32mI (245) app_init: Project name:     app-template[0m
+[0;32mI (250) app_init: App version:      cb82874-dirty[0m
+[0;32mI (254) app_init: Compile time:     Oct 24 2026 15:57:39[0m
+[0;32mI (259) app_init: ELF file SHA256:  87eed3387...[0m
+[0;32mI (263) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (267) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (271) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (275) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FC92120 len 0002DEE0 (183 KiB): RAM[0m
+[0;32mI (290) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (296) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (302) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;32mI (315) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (321) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (328) main_task: Started on CPU0[0m
+[0;32mI (358) main_task: Calling app_main()[0m
+[0;32mI (678) TFT: Khoi tao man hinh (LVGL) thanh cong (240x320)[0m
+[0;32mI (678) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (718) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: ASTC
+Type: SDSC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 1904MB
+CSD: ver=1, sector_size=512, capacity=3899392 read_bl_len=10
+SSR: bus_width=1
+[0;32mI (758) main_task: Returned from app_main()[0m
+[0;32mI (768) PLAYER: Tim thay 9 file trong /sdcard/music[0m
+[0;33mW (13548) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[1;31mE (21368) i2s_common: i2s_channel_disable(1254): the channel has not been enabled yet[0m
+[0;33mW (50308) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[0;33mW (52048) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m

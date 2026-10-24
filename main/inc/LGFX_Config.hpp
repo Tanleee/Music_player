@@ -39,7 +39,7 @@ public:
       cfg.offset_y = 0;
       cfg.readable  = false;
       cfg.invert    = false;
-      cfg.rgb_order = true;
+      cfg.rgb_order = false;
       cfg.bus_shared = true;   // bus dung chung voi SD
       _panel_instance.config(cfg);
     }

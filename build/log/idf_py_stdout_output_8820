@@ -1,0 +1,698 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe C:\esp\v6.0.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace D:\Espressif\Workspace\Music_player\build\app-template.elf D:\Espressif\Workspace\Music_player\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'C:\esp\v6.0.2\esp-idf\tools\idf.py' '-p' 'COM3'
+Wk���� v1.3
+[0;32mI (34) bootESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 13 2026 21:31:46[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=1c93ch (117052) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0002c964 vaddr=3fc8ce00 size=01af0h (  6896) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0002e45c vaddr=40380000 size=01bbch (  7100) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=7fdech (523756) map[0m
+[0;32mI (204) esp_image: segment 4: paddr=000afe14 vaddr=40381bbc size=0b1a8h ( 45480) load[0m
+[0;32mI (213) esp_image: segment 5: paddr=000bafc4 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (217) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (231) cpu_start: Unicore app[0m
+[0;32mI (239) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (239) cpu_start: Pro cpu start user code[0m
+[0;32mI (239) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (241) app_init: Application information:[0m
+[0;32mI (245) app_init: Project name:     app-template[0m
+[0;32mI (249) app_init: App version:      cb82874-dirty[0m
+[0;32mI (254) app_init: Compile time:     Oct 24 2026 14:55:53[0m
+[0;32mI (259) app_init: ELF file SHA256:  b224508a2...[0m
+[0;32mI (263) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (267) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (271) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (275) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FC92120 len 0002DEE0 (183 KiB): RAM[0m
+[0;32mI (290) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (296) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (302) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;32mI (315) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (320) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (327) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m
+[0;32mI (677) TFT: Khoi tao man hinh (LVGL) thanh cong (240x320)[0m
+[0;32mI (677) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (717) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: ASTC
+Type: SDSC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 1904MB
+CSD: ver=1, sector_size=512, capacity=3899392 read_bl_len=10
+SSR: bus_width=1
+[0;32mI (757) main_task: Returned from app_main()[0m
+[0;32mI (757) PLAYER: Tim thay 9 file trong /sdcard/music[0m
+[1;31mE (18917) sdspi_host: data CRC failed, got=0x1c49 expected=0xaf1e[0m
+[0;32mI (18917) sdspi_host: d8 fc 61 fd e0 fd 54 fe c0 fe 22 ff 7b ff cc ff[0m
+[1;31mE (18927) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x109, status 0xff04[0m
+[1;31mE (18927) sdmmc_cmd: sdmmc_read_sectors: error 0x109 reading blocks 375360+[0..6][0m
+[1;31mE (18937) diskio_sdmmc: sdmmc_read_blocks failed (0x109)[0m
+[1;31mE (20307) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (20307) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (20307) PLAYER: Khong mo duoc file /sdcard/music/A Thousand Years.wav[0m
+[1;31mE (21317) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (21317) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (21317) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Cheating on You [Official Video].wav[0m
+[1;31mE (22327) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (22327) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (22327) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Attention [Official Video].wav[0m
+[1;31mE (23337) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (23337) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (23337) PLAYER: Khong mo duoc file /sdcard/music/okeokeoke  Low G.wav[0m
+[1;31mE (24287) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (24287) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (24287) task_wdt: Tasks currently running:[0m
+[1;31mE (24287) task_wdt: CPU 0: player_task[0m
+[1;31mE (24287) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40387c80  RA      : 0x40387d0e  SP      : 0x3fcb60b0  GP      : 0x3fc8d600  
+TP      : 0x3fcb6820  T0      : 0x3fc94688  T1      : 0x80000000  T2      : 0x00000000  
+S0/FP   : 0x3fc9470c  S1      : 0x3fc947b4  A0      : 0x00000001  A1      : 0x00000000  
+A2      : 0x00000039  A3      : 0x6003f000  A4      : 0x00000000  A5      : 0x600c2000  
+A6      : 0x3fc9481c  A7      : 0x00000008  S2      : 0x3fc9474c  S3      : 0x3fc94894  
+S4      : 0xffffffff  S5      : 0x3fca19e0  S6      : 0x3fcb6180  S7      : 0x00000000  
+S8      : 0x00000008  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0xff000fff  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (24427) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (24437) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (24437) PLAYER: Khong mo duoc file /sdcard/music/BIGBAN~1.WAV[0m
+[1;31mE (25447) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (25447) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (25447) PLAYER: Khong mo duoc file /sdcard/music/�ONTUY~1.WAV[0m
+[1;31mE (26457) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (26457) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (26457) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[1;31mE (27457) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (27467) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (27467) PLAYER: Khong mo duoc file /sdcard/music/BTS DOPE.wav[0m
+[1;31mE (28467) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (28467) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (28467) PLAYER: Khong mo duoc file /sdcard/music/This is what autumn feels like.wav[0m
+[1;31mE (29287) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (29287) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (29287) task_wdt: Tasks currently running:[0m
+[1;31mE (29287) task_wdt: CPU 0: player_task[0m
+[1;31mE (29287) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40381d6a  RA      : 0x40381d54  SP      : 0x3fcb60e0  GP      : 0x3fc8d600  
+TP      : 0x3fcb6820  T0      : 0x3fc94688  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fcb61a8  S1      : 0x00000008  A0      : 0x3fc946e4  A1      : 0x3fcb61a8  
+A2      : 0x00000008  A3      : 0x00000001  A4      : 0x00000001  A5      : 0x00000000  
+A6      : 0x3fcb6140  A7      : 0x00000000  S2      : 0x3fc946e4  S3      : 0x3fc94688  
+S4      : 0x00000001  S5      : 0x3fcb6140  S6      : 0x3fc94688  S7      : 0x00000000  
+S8      : 0x00000001  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000040  T4      : 0x00000001  T5      : 0x00000001  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (29477) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (29477) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (29477) PLAYER: Khong mo duoc file /sdcard/music/A Thousand Years.wav[0m
+[1;31mE (30487) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (30487) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (30487) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Cheating on You [Official Video].wav[0m
+[1;31mE (31497) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (31497) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (31507) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Attention [Official Video].wav[0m
+[1;31mE (32507) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (32507) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (32517) PLAYER: Khong mo duoc file /sdcard/music/okeokeoke  Low G.wav[0m
+[1;31mE (33517) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (33517) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (33517) PLAYER: Khong mo duoc file /sdcard/music/BIGBAN~1.WAV[0m
+[1;31mE (34287) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (34287) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (34287) task_wdt: Tasks currently running:[0m
+[1;31mE (34287) task_wdt: CPU 0: player_task[0m
+[1;31mE (34287) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40387c80  RA      : 0x40387d0e  SP      : 0x3fcb60b0  GP      : 0x3fc8d600  
+TP      : 0x3fcb6820  T0      : 0x3fc94688  T1      : 0x80000000  T2      : 0x00000000  
+S0/FP   : 0x3fc9470c  S1      : 0x3fc947b4  A0      : 0x00000001  A1      : 0x00000000  
+A2      : 0x00000039  A3      : 0x6003f000  A4      : 0x00000000  A5      : 0x600c2000  
+A6      : 0x3fc9481c  A7      : 0x00000008  S2      : 0x3fc9474c  S3      : 0x3fc94894  
+S4      : 0xffffffff  S5      : 0x3fca19e0  S6      : 0x3fcb6180  S7      : 0x00000000  
+S8      : 0x00000008  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0xff000fff  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (34527) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (34527) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (34527) PLAYER: Khong mo duoc file /sdcard/music/�ONTUY~1.WAV[0m
+[1;31mE (35537) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (35537) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (35537) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[1;31mE (36547) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (36547) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (36547) PLAYER: Khong mo duoc file /sdcard/music/BTS DOPE.wav[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 13 2026 21:31:46[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=1c93ch (117052) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0002c964 vaddr=3fc8ce00 size=01af0h (  6896) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0002e45c vaddr=40380000 size=01bbch (  7100) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=7fdech (523756) map[0m
+[0;32mI (204) esp_image: segment 4: paddr=000afe14 vaddr=40381bbc size=0b1a8h ( 45480) load[0m
+[0;32mI (213) esp_image: segment 5: paddr=000bafc4 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (217) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (231) cpu_start: Unicore app[0m
+[0;32mI (239) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (239) cpu_start: Pro cpu start user code[0m
+[0;32mI (239) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (241) app_init: Application information:[0m
+[0;32mI (245) app_init: Project name:     app-template[0m
+[0;32mI (249) app_init: App version:      cb82874-dirty[0m
+[0;32mI (254) app_init: Compile time:     Oct 24 2026 14:55:53[0m
+[0;32mI (259) app_init: ELF file SHA256:  b224508a2...[0m
+[0;32mI (263) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (267) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (271) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (275) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FC92120 len 0002DEE0 (183 KiB): RAM[0m
+[0;32mI (290) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (296) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (302) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;32mI (315) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (320) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (327) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m
+[0;32mI (677) TFT: Khoi tao man hinh (LVGL) thanh cong (240x320)[0m
+[0;32mI (677) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (717) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: ASTC
+Type: SDSC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 1904MB
+CSD: ver=1, sector_size=512, capacity=3899392 read_bl_len=10
+SSR: bus_width=1
+[0;32mI (757) main_task: Returned from app_main()[0m
+[0;32mI (757) PLAYER: Tim thay 9 file trong /sdcard/music[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 13 2026 21:31:46[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=1c93ch (117052) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0002c964 vaddr=3fc8ce00 size=01af0h (  6896) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0002e45c vaddr=40380000 size=01bbch (  7100) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=7fdech (523756) map[0m
+[0;32mI (204) esp_image: segment 4: paddr=000afe14 vaddr=40381bbc size=0b1a8h ( 45480) load[0m
+[0;32mI (213) esp_image: segment 5: paddr=000bafc4 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (217) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (231) cpu_start: Unicore app[0m
+[0;32mI (239) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (239) cpu_start: Pro cpu start user code[0m
+[0;32mI (239) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (241) app_init: Application information:[0m
+[0;32mI (245) app_init: Project name:     app-template[0m
+[0;32mI (249) app_init: App version:      cb82874-dirty[0m
+[0;32mI (254) app_init: Compile time:     Oct 24 2026 14:55:53[0m
+[0;32mI (259) app_init: ELF file SHA256:  b224508a2...[0m
+[0;32mI (263) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (267) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (271) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (275) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FC92120 len 0002DEE0 (183 KiB): RAM[0m
+[0;32mI (290) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (296) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (302) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;32mI (315) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (320) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (327) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m
+[0;32mI (677) TFT: Khoi tao man hinh (LVGL) thanh cong (240x320)[0m
+[0;32mI (677) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (717) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: ASTC
+Type: SDSC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 1904MB
+CSD: ver=1, sector_size=512, capacity=3899392 read_bl_len=10
+SSR: bus_width=1
+[0;32mI (757) main_task: Returned from app_main()[0m
+[0;32mI (757) PLAYER: Tim thay 9 file trong /sdcard/music[0m
+[1;31mE (22847) sdspi_host: data CRC failed, got=0xd172 expected=0x0eb6[0m
+[0;32mI (22847) sdspi_host: ae f7 1d f1 73 f3 83 ff 95 01 25 f5 96 ed af f0[0m
+[1;31mE (22847) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x109, status 0xff04[0m
+[1;31mE (22857) sdmmc_cmd: sdmmc_read_sectors: error 0x109 reading blocks 236424+[0..6][0m
+[1;31mE (22857) diskio_sdmmc: sdmmc_read_blocks failed (0x109)[0m
+[1;31mE (24227) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (24227) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (24227) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[1;31mE (25227) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (25227) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (25237) PLAYER: Khong mo duoc file /sdcard/music/BTS DOPE.wav[0m
+[1;31mE (26237) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (26237) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (26237) PLAYER: Khong mo duoc file /sdcard/music/This is what autumn feels like.wav[0m
+[1;31mE (27247) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (27247) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (27247) PLAYER: Khong mo duoc file /sdcard/music/A Thousand Years.wav[0m
+[1;31mE (28217) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (28217) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (28217) task_wdt: Tasks currently running:[0m
+[1;31mE (28217) task_wdt: CPU 0: player_task[0m
+[1;31mE (28217) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40381d16  RA      : 0x40381d54  SP      : 0x3fcb60e0  GP      : 0x3fc8d600  
+TP      : 0x3fcb6820  T0      : 0x3fc94688  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fcb61a8  S1      : 0x00000008  A0      : 0x00000001  A1      : 0x3fcb61a8  
+A2      : 0x00000008  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fc8ce54  
+A6      : 0x3fcb6144  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x3fc94688  
+S4      : 0x00000000  S5      : 0x3fcb6144  S6      : 0x3fc94688  S7      : 0x00000000  
+S8      : 0x00000001  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000040  T4      : 0x00000001  T5      : 0x00000001  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (28347) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (28357) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (28357) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Cheating on You [Official Video].wav[0m
+[1;31mE (29367) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (29367) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (29377) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Attention [Official Video].wav[0m
+[1;31mE (30377) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (30377) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (30387) PLAYER: Khong mo duoc file /sdcard/music/okeokeoke  Low G.wav[0m
+[1;31mE (31387) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (31387) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (31387) PLAYER: Khong mo duoc file /sdcard/music/BIGBAN~1.WAV[0m
+[1;31mE (32397) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (32397) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (32397) PLAYER: Khong mo duoc file /sdcard/music/�ONTUY~1.WAV[0m
+[1;31mE (33217) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (33217) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (33217) task_wdt: Tasks currently running:[0m
+[1;31mE (33217) task_wdt: CPU 0: player_task[0m
+[1;31mE (33217) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40381d16  RA      : 0x40381d54  SP      : 0x3fcb60e0  GP      : 0x3fc8d600  
+TP      : 0x3fcb6820  T0      : 0x3fc94688  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fcb61a8  S1      : 0x00000008  A0      : 0x00000001  A1      : 0x3fcb61a8  
+A2      : 0x00000008  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fc8ce54  
+A6      : 0x3fcb6144  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x3fc94688  
+S4      : 0x00000000  S5      : 0x3fcb6144  S6      : 0x3fc94688  S7      : 0x00000000  
+S8      : 0x00000001  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000040  T4      : 0x00000001  T5      : 0x00000001  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (33407) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (33407) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (33407) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[1;31mE (34417) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (34417) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (34417) PLAYER: Khong mo duoc file /sdcard/music/BTS DOPE.wav[0m
+[1;31mE (35427) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (35427) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (35427) PLAYER: Khong mo duoc file /sdcard/music/This is what autumn feels like.wav[0m
+[1;31mE (36437) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (36437) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (36437) PLAYER: Khong mo duoc file /sdcard/music/A Thousand Years.wav[0m
+[1;31mE (37437) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (37437) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (37447) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Cheating on You [Official Video].wav[0m
+[1;31mE (38217) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (38217) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (38217) task_wdt: Tasks currently running:[0m
+[1;31mE (38217) task_wdt: CPU 0: player_task[0m
+[1;31mE (38217) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40381d52  RA      : 0x40381d4c  SP      : 0x3fcb60e0  GP      : 0x3fc8d600  
+TP      : 0x3fcb6820  T0      : 0x3fc94688  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fcb61a8  S1      : 0x00000008  A0      : 0x00000001  A1      : 0x3fcb61a8  
+A2      : 0x00000008  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fc8ce54  
+A6      : 0x3fcb6144  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x3fc94688  
+S4      : 0x00000000  S5      : 0x3fcb6144  S6      : 0x3fc94688  S7      : 0x00000000  
+S8      : 0x00000001  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000040  T4      : 0x00000001  T5      : 0x00000001  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (38457) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (38457) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (38457) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Attention [Official Video].wav[0m
+[1;31mE (39467) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (39467) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (39467) PLAYER: Khong mo duoc file /sdcard/music/okeokeoke  Low G.wav[0m
+[1;31mE (40467) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (40477) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (40477) PLAYER: Khong mo duoc file /sdcard/music/BIGBAN~1.WAV[0m
+[1;31mE (41477) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (41477) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (41477) PLAYER: Khong mo duoc file /sdcard/music/�ONTUY~1.WAV[0m
+[1;31mE (42487) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (42487) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (42487) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[1;31mE (43217) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (43217) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (43217) task_wdt: Tasks currently running:[0m
+[1;31mE (43217) task_wdt: CPU 0: player_task[0m
+[1;31mE (43217) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40387c80  RA      : 0x40387d0e  SP      : 0x3fcb60b0  GP      : 0x3fc8d600  
+TP      : 0x3fcb6820  T0      : 0x3fc94688  T1      : 0x80000000  T2      : 0x00000000  
+S0/FP   : 0x3fc9470c  S1      : 0x3fc947b4  A0      : 0x00000001  A1      : 0x00000000  
+A2      : 0x00000039  A3      : 0x6003f000  A4      : 0x00000000  A5      : 0x600c2000  
+A6      : 0x3fc9481c  A7      : 0x00000008  S2      : 0x3fc9474c  S3      : 0x3fc94894  
+S4      : 0xffffffff  S5      : 0x3fca19e0  S6      : 0x3fcb6180  S7      : 0x00000000  
+S8      : 0x00000008  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0xff000fff  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (43497) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (43497) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (43497) PLAYER: Khong mo duoc file /sdcard/music/BTS DOPE.wav[0m
+[1;31mE (44507) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (44507) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (44507) PLAYER: Khong mo duoc file /sdcard/music/This is what autumn feels like.wav[0m
+[1;31mE (45517) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (45517) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (45517) PLAYER: Khong mo duoc file /sdcard/music/A Thousand Years.wav[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 13 2026 21:31:46[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=1c93ch (117052) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0002c964 vaddr=3fc8ce00 size=01af0h (  6896) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0002e45c vaddr=40380000 size=01bbch (  7100) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=7fdech (523756) map[0m
+[0;32mI (204) esp_image: segment 4: paddr=000afe14 vaddr=40381bbc size=0b1a8h ( 45480) load[0m
+[0;32mI (213) esp_image: segment 5: paddr=000bafc4 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (217) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (231) cpu_start: Unicore app[0m
+[0;32mI (239) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (239) cpu_start: Pro cpu start user code[0m
+[0;32mI (239) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (241) app_init: Application information:[0m
+[0;32mI (245) app_init: Project name:     app-template[0m
+[0;32mI (249) app_init: App version:      cb82874-dirty[0m
+[0;32mI (254) app_init: Compile time:     Oct 24 2026 14:55:53[0m
+[0;32mI (259) app_init: ELF file SHA256:  b224508a2...[0m
+[0;32mI (263) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (267) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (271) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (275) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FC92120 len 0002DEE0 (183 KiB): RAM[0m
+[0;32mI (290) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (296) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (302) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;32mI (315) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (320) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (327) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m
+[0;32mI (677) TFT: Khoi tao man hinh (LVGL) thanh cong (240x320)[0m
+[0;32mI (677) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (717) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: ASTC
+Type: SDSC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 1904MB
+CSD: ver=1, sector_size=512, capacity=3899392 read_bl_len=10
+SSR: bus_width=1
+[0;32mI (757) main_task: Returned from app_main()[0m
+[0;32mI (757) PLAYER: Tim thay 9 file trong /sdcard/music[0m
+[1;31mE (16747) sdspi_host: data CRC failed, got=0x99ba expected=0x187f[0m
+[0;32mI (16747) sdspi_host: f2 ff e5 ff d4 ff c5 ff bb ff b3 ff ac ff a9 ff[0m
+[1;31mE (16747) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x109, status 0xff04[0m
+[1;31mE (16757) sdmmc_cmd: sdmmc_read_sectors: error 0x109 reading blocks 37424+[0..6][0m
+[1;31mE (16767) diskio_sdmmc: sdmmc_read_blocks failed (0x109)[0m
+[1;31mE (18137) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (18137) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (18137) PLAYER: Khong mo duoc file /sdcard/music/okeokeoke  Low G.wav[0m
+[1;31mE (19147) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (19147) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (19147) PLAYER: Khong mo duoc file /sdcard/music/BIGBAN~1.WAV[0m
+[1;31mE (20147) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (20147) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (20147) PLAYER: Khong mo duoc file /sdcard/music/�ONTUY~1.WAV[0m
+[1;31mE (21157) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (21157) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (21157) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[1;31mE (22117) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (22117) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (22117) task_wdt: Tasks currently running:[0m
+[1;31mE (22117) task_wdt: CPU 0: player_task[0m
+[1;31mE (22117) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x403875c8  RA      : 0x40381f54  SP      : 0x3fcb60b0  GP      : 0x3fc8d600  
+TP      : 0x3fcb6820  T0      : 0x3fc94688  T1      : 0x00000000  T2      : 0x00000000  
+S0/FP   : 0x3fcb61a8  S1      : 0x00000008  A0      : 0x3fcb61a8  A1      : 0x00000008  
+A2      : 0x00000006  A3      : 0x00000001  A4      : 0xffffffff  A5      : 0x00000008  
+A6      : 0x3fcb6140  A7      : 0x00000000  S2      : 0x00000001  S3      : 0x00000000  
+S4      : 0x00000001  S5      : 0x3fcb6140  S6      : 0x00000008  S7      : 0x00000000  
+S8      : 0x00000001  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000040  T4      : 0x00000001  T5      : 0x00000001  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (22257) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (22267) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (22267) PLAYER: Khong mo duoc file /sdcard/music/BTS DOPE.wav[0m
+[1;31mE (23277) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (23277) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (23277) PLAYER: Khong mo duoc file /sdcard/music/This is what autumn feels like.wav[0m
+[1;31mE (24287) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (24287) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (24287) PLAYER: Khong mo duoc file /sdcard/music/A Thousand Years.wav[0m
+[1;31mE (25297) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (25297) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (25297) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Cheating on You [Official Video].wav[0m
+[1;31mE (26307) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (26307) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (26307) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Attention [Official Video].wav[0m
+[1;31mE (27117) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (27117) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (27117) task_wdt: Tasks currently running:[0m
+[1;31mE (27117) task_wdt: CPU 0: player_task[0m
+[1;31mE (27117) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40381c5e  RA      : 0x40382456  SP      : 0x3fcb60d0  GP      : 0x3fc8d600  
+TP      : 0x3fcb6820  T0      : 0x3fc94688  T1      : 0x00008000  T2      : 0x00000000  
+S0/FP   : 0x3fcb60e0  S1      : 0x3fc946e4  A0      : 0x3fc94810  A1      : 0x3fcb61a8  
+A2      : 0x00000008  A3      : 0x00000000  A4      : 0x00000000  A5      : 0xc0008008  
+A6      : 0x3fc94810  A7      : 0x00000008  S2      : 0x3fc94894  S3      : 0x3fc94894  
+S4      : 0xffffffff  S5      : 0x3fca19e0  S6      : 0x3fcb6180  S7      : 0x00000000  
+S8      : 0x00000008  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0xfffff000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (27317) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (27317) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (27317) PLAYER: Khong mo duoc file /sdcard/music/okeokeoke  Low G.wav[0m
+[1;31mE (28327) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (28327) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (28327) PLAYER: Khong mo duoc file /sdcard/music/BIGBAN~1.WAV[0m
+[1;31mE (29337) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (29337) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (29337) PLAYER: Khong mo duoc file /sdcard/music/�ONTUY~1.WAV[0m
+[1;31mE (30337) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (30337) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (30347) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[1;31mE (31347) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (31347) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (31347) PLAYER: Khong mo duoc file /sdcard/music/BTS DOPE.wav[0m
+[1;31mE (32117) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (32117) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (32117) task_wdt: Tasks currently running:[0m
+[1;31mE (32117) task_wdt: CPU 0: player_task[0m
+[1;31mE (32117) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40387c80  RA      : 0x40387d0e  SP      : 0x3fcb60a0  GP      : 0x3fc8d600  
+TP      : 0x3fcb6820  T0      : 0x3fc94688  T1      : 0x80000000  T2      : 0x00000000  
+S0/FP   : 0x3fc9470c  S1      : 0x3fc947b4  A0      : 0x00000001  A1      : 0x00000000  
+A2      : 0x6003f000  A3      : 0x00200000  A4      : 0x00000000  A5      : 0x600c2000  
+A6      : 0xfff00000  A7      : 0x00000008  S2      : 0x3fc94810  S3      : 0x3fc9474c  
+S4      : 0xffffffff  S5      : 0x3fca19e0  S6      : 0x3fcb6180  S7      : 0x00000000  
+S8      : 0x00000008  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0xff000fff  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (32357) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (32357) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (32357) PLAYER: Khong mo duoc file /sdcard/music/This is what autumn feels like.wav[0m
+[1;31mE (33367) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (33367) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (33367) PLAYER: Khong mo duoc file /sdcard/music/A Thousand Years.wav[0m
+[1;31mE (34377) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (34377) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (34377) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Cheating on You [Official Video].wav[0m
+[1;31mE (35387) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, status 0xff04[0m
+[1;31mE (35387) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[0;33mW (35387) PLAYER: Khong mo duoc file /sdcard/music/Charlie Puth - Attention [Official Video].wav[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xe (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fcc
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Oct 13 2026 21:31:46[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=1c93ch (117052) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0002c964 vaddr=3fc8ce00 size=01af0h (  6896) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0002e45c vaddr=40380000 size=01bbch (  7100) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=7fdech (523756) map[0m
+[0;32mI (204) esp_image: segment 4: paddr=000afe14 vaddr=40381bbc size=0b1a8h ( 45480) load[0m
+[0;32mI (213) esp_image: segment 5: paddr=000bafc4 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (217) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (231) cpu_start: Unicore app[0m
+[0;32mI (239) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (239) cpu_start: Pro cpu start user code[0m
+[0;32mI (239) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (241) app_init: Application information:[0m
+[0;32mI (245) app_init: Project name:     app-template[0m
+[0;32mI (249) app_init: App version:      cb82874-dirty[0m
+[0;32mI (254) app_init: Compile time:     Oct 24 2026 14:55:53[0m
+[0;32mI (259) app_init: ELF file SHA256:  b224508a2...[0m
+[0;32mI (263) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (267) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (271) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (275) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FC92120 len 0002DEE0 (183 KiB): RAM[0m
+[0;32mI (290) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (296) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (302) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;32mI (315) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (320) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (327) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m
+[0;32mI (677) TFT: Khoi tao man hinh (LVGL) thanh cong (240x320)[0m
+[0;32mI (677) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (717) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: ASTC
+Type: SDSC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 1904MB
+CSD: ver=1, sector_size=512, capacity=3899392 read_bl_len=10
+SSR: bus_width=1
+[0;32mI (757) main_task: Returned from app_main()[0m
+[0;32mI (757) PLAYER: Tim thay 9 file trong /sdcard/music[0m
+[0;33mW (16467) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[0;33mW (25167) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[0;33mW (27757) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[0;33mW (28587) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[0;33mW (30067) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[0;33mW (30527) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[0;33mW (30937) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[0;33mW (31357) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[0;33mW (33317) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
+[0;33mW (34097) PLAYER: Khong mo duoc file /sdcard/music/BTS�ME~1.WAV[0m
