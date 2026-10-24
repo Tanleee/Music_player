@@ -371,6 +371,9 @@ PYTHON:UNINITIALIZED=C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
+//No help, variable specified on the command line.
+SDKCONFIG:UNINITIALIZED=sdkconfig
+
 //Value Computed by CMake
 TF-PSA-Crypto_BINARY_DIR:STATIC=D:/Espressif/Workspace/Music_player/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto
 
@@ -419,7 +422,7 @@ app-template_IS_TOP_LEVEL:STATIC=ON
 app-template_SOURCE_DIR:STATIC=D:/Espressif/Workspace/Music_player
 
 //Dependencies for the target
-builtin_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;idf::esp_security;general;idf::esp_mm;
+builtin_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_riscv;general;idf::esp_security;general;idf::esp_mm;
 
 //Value Computed by CMake
 esp-idf_BINARY_DIR:STATIC=D:/Espressif/Workspace/Music_player/build/esp-idf
@@ -431,31 +434,31 @@ esp-idf_IS_TOP_LEVEL:STATIC=OFF
 esp-idf_SOURCE_DIR:STATIC=C:/esp/v6.0.2/esp-idf
 
 //Dependencies for the target
-everest_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;
+everest_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_riscv;
 
 //Dependencies for the target
-extras_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;idf::esp_security;
+extras_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_riscv;general;idf::esp_security;
 
 //Dependencies for the target
-mbedtls_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;mbedx509;general;idf::esp_security;
+mbedtls_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_riscv;general;mbedx509;general;idf::esp_security;
 
 //Dependencies for the target
-mbedx509_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;tfpsacrypto;general;idf::esp_security;
+mbedx509_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_riscv;general;tfpsacrypto;general;idf::esp_security;
 
 //Dependencies for the target
-p256-m_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;idf::esp_security;
+p256-m_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_riscv;general;idf::esp_security;
 
 //Dependencies for the target
-platform_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;idf::esp_security;
+platform_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_riscv;general;idf::esp_security;
 
 //Dependencies for the target
-pqcp_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;
+pqcp_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_riscv;
 
 //Dependencies for the target
-tfpsacrypto_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_nvs_flash;general;idf::esp_security;general;idf::esp_driver_dma;general;idf::esp_mm;general;idf::efuse;general;idf::efuse;
+tfpsacrypto_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_riscv;general;__idf_nvs_flash;general;idf::esp_security;general;idf::esp_driver_dma;general;idf::esp_mm;general;idf::efuse;general;idf::efuse;
 
 //Dependencies for the target
-utilities_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;idf::esp_security;
+utilities_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_cxx;general;__idf_esp_libc;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_esp_stdio;general;__idf_riscv;general;__idf_riscv;general;idf::esp_security;
 
 
 ########################
@@ -609,7 +612,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=160
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=161
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

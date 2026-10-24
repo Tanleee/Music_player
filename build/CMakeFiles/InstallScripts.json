@@ -160,6 +160,7 @@
 		"D:/Espressif/Workspace/Music_player/build/esp-idf/spiffs/cmake_install.cmake",
 		"D:/Espressif/Workspace/Music_player/build/esp-idf/ulp/cmake_install.cmake",
 		"D:/Espressif/Workspace/Music_player/build/esp-idf/LovyanGFX/cmake_install.cmake",
+		"D:/Espressif/Workspace/Music_player/build/esp-idf/lvgl__lvgl/cmake_install.cmake",
 		"D:/Espressif/Workspace/Music_player/build/esp-idf/main/cmake_install.cmake"
 	],
 	"Parallel" : false

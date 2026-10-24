@@ -187,6 +187,8 @@ $<TARGET_FILE:idf::LovyanGFX>
 $<TARGET_FILE:__idf_esp_lcd>
 $<TARGET_FILE:__idf_driver>
 $<TARGET_FILE:__idf_esp_driver_ledc>
+$<TARGET_FILE:idf::lvgl__lvgl>
 $<TARGET_FILE:idf::main>
 $<TARGET_FILE:__idf_fatfs>
 $<TARGET_FILE:__idf_LovyanGFX>
+$<TARGET_FILE:__idf_lvgl__lvgl>

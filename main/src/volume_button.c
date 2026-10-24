@@ -17,8 +17,6 @@ static const char *TAG = "VOL_BTN";
 static QueueHandle_t s_btn_queue = NULL;
 
 // ISR: cuc ky nhe, chi day so GPIO vao queue roi thoat ngay.
-// Moi lan bounce (nhieu canh len lien tuc) se tao nhieu phan tu trong queue,
-// nhung tat ca duoc loc o button_task, khong xu ly gi nang trong ISR.
 static void IRAM_ATTR btn_isr_handler(void *arg)
 {
     gpio_num_t pin = (gpio_num_t)(uint32_t)arg;
@@ -45,7 +43,7 @@ static void button_task(void *arg)
 
         float vol = i2s_audio_get_volume();
         vol += (pin == PIN_BTN_VOL_UP) ? VOLUME_STEP : -VOLUME_STEP;
-        i2s_audio_set_volume(vol);   // ham nay tu clamp ve [0.0, 1.0]
+        i2s_audio_set_volume(vol);   
 
         ESP_LOGI(TAG, "%s -> volume = %.0f%%",
                  (pin == PIN_BTN_VOL_UP) ? "VOL_UP" : "VOL_DOWN",
@@ -59,7 +57,7 @@ static void configure_button_gpio(gpio_num_t pin)
         .pin_bit_mask = 1ULL << pin,
         .mode         = GPIO_MODE_INPUT,
         .pull_up_en   = GPIO_PULLUP_DISABLE,
-        .pull_down_en = GPIO_PULLDOWN_DISABLE,   // da dung dien tro pull-down ngoai
+        .pull_down_en = GPIO_PULLDOWN_DISABLE,  
         .intr_type    = GPIO_INTR_POSEDGE,       // nhan = canh len (do dung pull-down)
     };
     gpio_config(&cfg);

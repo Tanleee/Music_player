@@ -1104,6 +1104,13 @@ D:/Espressif/Workspace/Music_player/build/esp-idf/LovyanGFX/CMakeFiles/list_inst
 D:/Espressif/Workspace/Music_player/build/esp-idf/LovyanGFX/CMakeFiles/install.dir
 D:/Espressif/Workspace/Music_player/build/esp-idf/LovyanGFX/CMakeFiles/install/local.dir
 D:/Espressif/Workspace/Music_player/build/esp-idf/LovyanGFX/CMakeFiles/install/strip.dir
+D:/Espressif/Workspace/Music_player/build/esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir
+D:/Espressif/Workspace/Music_player/build/esp-idf/lvgl__lvgl/CMakeFiles/edit_cache.dir
+D:/Espressif/Workspace/Music_player/build/esp-idf/lvgl__lvgl/CMakeFiles/rebuild_cache.dir
+D:/Espressif/Workspace/Music_player/build/esp-idf/lvgl__lvgl/CMakeFiles/list_install_components.dir
+D:/Espressif/Workspace/Music_player/build/esp-idf/lvgl__lvgl/CMakeFiles/install.dir
+D:/Espressif/Workspace/Music_player/build/esp-idf/lvgl__lvgl/CMakeFiles/install/local.dir
+D:/Espressif/Workspace/Music_player/build/esp-idf/lvgl__lvgl/CMakeFiles/install/strip.dir
 D:/Espressif/Workspace/Music_player/build/esp-idf/main/CMakeFiles/__idf_main.dir
 D:/Espressif/Workspace/Music_player/build/esp-idf/main/CMakeFiles/edit_cache.dir
 D:/Espressif/Workspace/Music_player/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

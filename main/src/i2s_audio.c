@@ -163,3 +163,13 @@ void i2s_audio_wait_drain(void)
     }
     vTaskDelay(pdMS_TO_TICKS(50));
 }
+
+void i2s_audio_pause(void)
+{
+    if (s_tx_chan) i2s_channel_disable(s_tx_chan);
+}
+
+void i2s_audio_resume(void)
+{
+    if (s_tx_chan) i2s_channel_enable(s_tx_chan);
+}

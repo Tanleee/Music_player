@@ -19,3 +19,8 @@ void i2s_audio_wait_drain(void);
 
 // Lay muc am luong hien tai (0.0 - 1.0)
 float i2s_audio_get_volume(void);
+
+// Tam dung / tiep tuc xuat am thanh ra loa (dung khi nguoi dung bam nut Play/Pause).
+// Khong lam mat du lieu dang cho trong hang doi I2S, chi tat/bat kenh I2S.
+void i2s_audio_pause(void);
+void i2s_audio_resume(void);
